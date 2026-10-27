@@ -1,0 +1,28 @@
+Lookout
+=======
+
+This project is a modified version of "siem-dashboard", copyright (c)
+AngelaMos, released under the GNU Affero General Public License v3.0. It
+remains licensed under the same license (see LICENSE). Original copyright
+headers are preserved in the source files.
+
+Modifications (AGPL-3.0 section 5(a)), made 2026-10-27:
+
+  - Renamed the project from "siem-dashboard" to "Lookout" (distribution
+    name "lookout-console").
+  - Renamed the Python package backend/app to backend/lookout and the
+    model modules from PascalCase to snake_case (Alert.py -> alert.py,
+    LogEvent.py -> log_event.py, and so on); updated all imports.
+  - Renamed container/project prefix, database name, Redis stream keys
+    and consumer group, and frontend storage keys.
+  - Changed default host ports, the internal backend port and the Docker
+    network subnets.
+  - Replaced the frontend color palette, brand mark, navigation labels,
+    icons, web manifest and page metadata.
+  - Removed the original screenshots and DEMO.md, which depicted the
+    previous branding and linked to the original hosted demo.
+  - Normalized line endings to LF and added .gitattributes.
+  - Rewrote the README and adjusted the learn/ documents to match.
+
+The ingestion, correlation, alerting and scenario logic is otherwise
+unchanged from the original work.

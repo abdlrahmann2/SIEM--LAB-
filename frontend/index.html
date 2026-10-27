@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--
+  Lookout Console
+  Author(s): © AngelaMos
+-->
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/favicon.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      href="/assets/apple-touch-icon.png"
+    />
+    <link
+      rel="manifest"
+      href="/assets/site.webmanifest"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self' github.com api.github.com ws: wss: webpack:; form-action 'self' github.com; worker-src 'self' blob:;"
+    />
+    <title>Lookout Console</title>
+    <meta
+      name="description"
+      content="Lookout: live log ingestion, correlation rules, alert triage and attack-scenario drills."
+    />
+    <meta
+      name="author"
+      content="Lookout contributors (derived from work by AngelaMos; AGPL-3.0)"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script
+      type="module"
+      src="/src/main.tsx"
+    ></script>
+  </body>
+</html>
